@@ -51,6 +51,7 @@ formal(32, 54, 76,87)
 
 # Exercício 5 - Crie uma função anônima e atribua seu retorno a uma variável chamada soma. A expressão vai receber 2 
 # números como parâmetro e retornar a soma deles
+
 lam = lambda x, y: x + y
 
 soma = lam(10, 20)
