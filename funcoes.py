@@ -52,8 +52,35 @@ formal(32, 54, 76,87)
 # Exercício 5 - Crie uma função anônima e atribua seu retorno a uma variável chamada soma. A expressão vai receber 2 
 # números como parâmetro e retornar a soma deles
 
-lam = lambda x, y: x + y
+soma = lambda x, y: x + y
+print(soma(10, 10))
 
-soma = lam(10, 20)
-print(soma)
 
+
+# Exercício 7 - Abaixo você encontra uma lista com temperaturas em graus Celsius
+# Crie uma função anônima que converta cada temperatura para Fahrenheit
+# Dica: para conseguir realizar este exercício, você deve criar sua função lambda, dentro de uma função 
+# (que será estudada no próximo capítulo). Isso permite aplicar sua função a cada elemento da lista
+# Como descobrir a fórmula matemática que converte de Celsius para Fahrenheit? Pesquise!!!
+Celsius = [39.2, 36.5, 37.3, 37.8]
+Fahrenheit = list(map(lambda c: round((c * 9/5), 2) + 32, Celsius))
+print(Fahrenheit)
+
+
+# Exercício 8 - Crie uma list comprehension que imprima o quadrado dos números de 1 a 10
+
+lista_comp = [ print(x**2) for x in range(1,11)]
+
+
+
+# Exercício 9 - Crie uma list comprehension que imprima as palavras com a letra a no nome
+
+palavras = ["maça", "coiote", "banana", "terreno", "Python"]
+comp = [ print(i) for i in palavras if 'a' in i ]
+
+
+
+# Exercício 10 - Crie uma list comprehension que imprima os números menores que 5 em um intervalo de 1 a 10
+
+list_comp = [ i for i in range(1, 10) if i < 6 ]
+print(list_comp)
